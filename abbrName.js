@@ -17,12 +17,20 @@ function abbrevName(name){
     console.log(initials)
   
     //   3rd step join 1st character with period
-    const finalData = initials.join(".")
+    const finalData = initials.join(".").toUpperCase();
     console.log(finalData)
     
     return finalData;
   }
 
+  //BEST SOLUTION
+
+  function abbrevName(name){
+
+    var nameArray = name.split(" ");
+    return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+  }
+  
 
 
 //   Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
