@@ -1,4 +1,8 @@
-
+function solution(nums){
+  var sortedList =  (nums || [] ).sort((a,b) => a - b)
+  console.log(sortedList)
+  return sortedList
+}
 
 
 //  Clever
